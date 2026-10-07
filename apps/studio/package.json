@@ -1,5 +1,6 @@
 {
   "name": "beekeeper-studio",
+  "productName": "Lavabase",
   "version": "6.1.5",
   "private": true,
   "desktopName": "beekeeper-studio.desktop",

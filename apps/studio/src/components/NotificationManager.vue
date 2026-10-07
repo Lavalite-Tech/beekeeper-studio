@@ -96,7 +96,7 @@ export default Vue.extend({
       const n = new Noty({
         text: `<div class="noty-onboarding-title">
                 <img class="noty-onboarding-logo" src="${logoUrl}">
-                Welcome to Beekeeper Studio!
+                Welcome to Lavabase!
               </div>
               <div class="noty-onboarding-body">
                 Double click the demo database to explore app features

@@ -21,7 +21,7 @@
             v-else-if="!config.connectionType"
             class="empty-state"
           >
-            <h3>Welcome to Beekeeper Studio</h3>
+            <h3>Welcome to Lavabase</h3>
             <p>Start by adding new connection.</p>
             <p>Or connection from a URL.</p>
             <div class="actions">
@@ -276,7 +276,7 @@
         </div>
 
         <small class="app-version">
-          <a href="https://www.beekeeperstudio.io/releases/latest">Beekeeper Studio {{ version }}</a>
+          <a href="https://www.beekeeperstudio.io/releases/latest">Lavabase {{ version }}</a>
         </small>
       </div>
     </div>

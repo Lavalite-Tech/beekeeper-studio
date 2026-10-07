@@ -105,7 +105,7 @@ export default class NativeMenuActionHandlers implements IMenuActionHandler {
   }
   about(): void {
     app.setAboutPanelOptions({
-      applicationName: "Beekeeper Studio",
+      applicationName: "Lavabase",
       applicationVersion: app.getVersion(),
       copyright: "Beekeeper Studio Team",
       authors: ["Matthew Rathbone", "Gregory Garden", "All the wonderful Github contributors"],
