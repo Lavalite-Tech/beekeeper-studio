@@ -109,22 +109,22 @@ export default class NativeMenuActionHandlers implements IMenuActionHandler {
       applicationVersion: app.getVersion(),
       copyright: "Beekeeper Studio Team",
       authors: ["Matthew Rathbone", "Gregory Garden", "All the wonderful Github contributors"],
-      website: "https://beekeeperstudio.io",
+      website: "https://lavalite.co.za",
       iconPath: getIcon()
     })
     app.showAboutPanel()
   }
 
   opendocs(): void {
-    safeOpenExternal("https://docs.beekeeperstudio.io/")
+    safeOpenExternal("https://lavalite.co.za")
   }
 
   contactSupport(): void {
-    safeOpenExternal("https://docs.beekeeperstudio.io/support/contact-support/")
+    safeOpenExternal("https://lavalite.co.za/support.html")
   }
 
   openGettingStarted(): void {
-    safeOpenExternal("https://docs.beekeeperstudio.io/getting-started-guide/")
+    safeOpenExternal("https://lavalite.co.za")
   }
 
   checkForUpdates(_menuItem: Electron.MenuItem, _win: Electron.BrowserWindow): void {

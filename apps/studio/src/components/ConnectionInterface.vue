@@ -258,7 +258,7 @@
             standalone
             class="connection-upgrade-panel"
           />
-          <template v-if="!config.connectionType">
+          <template v-if="false && !config.connectionType">
             <div class="pitch" v-if="!isUltimate">
               🌟 <strong>Upgrade</strong> to access the JSON sidebar, AI shell, robust import/export and much more!
               <a href="https://beekeeperstudio.io/pricing" class="">Upgrade</a>.
@@ -276,7 +276,7 @@
         </div>
 
         <small class="app-version">
-          <a href="https://www.beekeeperstudio.io/releases/latest">Lavabase {{ version }}</a>
+          <span>Lavabase {{ version }}</span>
         </small>
       </div>
     </div>

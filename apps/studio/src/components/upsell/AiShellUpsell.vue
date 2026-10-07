@@ -1,13 +1,13 @@
 <template>
   <upgrade-panel
     class="ai-shell-upsell"
-    title="The SQL AI shell needs a paid license"
+    title="The SQL AI shell is not available yet"
     :description="description"
     :show-features="false"
     standalone
     wide
   >
-    <ai-shell-preview />
+    <ai-shell-preview v-if="false" />
   </upgrade-panel>
 </template>
 
@@ -21,7 +21,7 @@ export default Vue.extend({
   data() {
     return {
       description:
-        "Ask a question in plain English. The shell reads the schema, writes the SQL, asks before it runs anything, and uses your own model key — no proxy, no usage fees.",
+        "AI features are coming to Lavabase soon.",
     };
   },
 });

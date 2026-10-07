@@ -11,7 +11,7 @@
         View any row as JSON. Super useful when working with wide tables or complex nested data.
       </p>
     </div>
-    <upsell-buttons />
+    <upsell-buttons v-if="false" />
   </div>
 </template>
 <script lang="js">

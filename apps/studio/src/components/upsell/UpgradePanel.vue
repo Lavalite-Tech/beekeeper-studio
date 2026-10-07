@@ -12,7 +12,7 @@
       </p>
       <slot />
       <ul
-        v-if="showFeatures"
+        v-if="false"
         class="upgrade-feature-list"
       >
         <li
@@ -24,7 +24,7 @@
           <span>{{ feature.label }}</span>
         </li>
       </ul>
-      <p class="upgrade-panel-links">
+      <p v-if="false" class="upgrade-panel-links">
         <a
           href="#"
           @click.prevent="learnMore"
@@ -34,7 +34,7 @@
         </a>
       </p>
     </div>
-    <upsell-buttons @started-trial="$emit('started-trial')" />
+    <upsell-buttons v-if="false" @started-trial="$emit('started-trial')" />
   </div>
 </template>
 
@@ -109,15 +109,15 @@ export default Vue.extend({
     },
     headingText(): string {
       if (this.title) return this.title
-      if (this.featureName) return `${this.featureName} needs a paid license`
-      return 'Upgrade Beekeeper Studio'
+      if (this.featureName) return `${this.featureName} is not available in Lavabase yet`
+      return 'Not available yet'
     },
     descriptionText(): string {
       if (this.description) return this.description
-      if (!this.showFeatures) return 'Not included in the Community Edition.'
+      if (!this.showFeatures) return 'This feature is not available in Lavabase yet.'
       return this.featureName
-        ? 'Not included in the Community Edition. A paid license also includes:'
-        : 'A paid license includes:'
+        ? 'This feature is not available in Lavabase yet.'
+        : 'Not available yet.'
     }
   },
   methods: {
